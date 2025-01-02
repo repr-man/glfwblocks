@@ -9,7 +9,7 @@ repositories {
     maven("https://jitpack.io")
 }
 dependencies {
-    implementation("com.github.repr-man:glfwblocks:0.0.1")
+    implementation("com.github.repr-man:glfwblocks:v0.0.1")
 }
 ```
 

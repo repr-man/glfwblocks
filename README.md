@@ -3,10 +3,15 @@ A Kotlin-ified wrapper over GLFW.
 It's _the easiest_ way to get a window and OpenGL context up and running.
 
 ## How to Use
-1. Clone the project.
-2. Modify any settings in [build.gradle.kts]() (e.g. Java toolchain version).
-3. Run `./gradlew publishToMavenLocal`
-4. Import into your own project.
+Add the following to your 'build.gradle.kts' (or equivalent):
+```kotlin
+repositories {
+    maven("https://jitpack.io")
+}
+dependencies {
+    implementation("com.github.repr-man:glfwblocks:0.0.1")
+}
+```
 
 ## Show Me Code
 Turn this:

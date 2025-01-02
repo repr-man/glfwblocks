@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.repr-man"
+group = "org.glfwblocks"
 version = "0.0.1"
 
 repositories {
@@ -27,10 +27,15 @@ java {
     }
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("glfwblocks") {
-            from(components["java"])
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("glfwblocks") {
+                from(components["java"])
+                group = "org.glfwblocks"
+                artifactId = "glfwblocks"
+                version = "0.0.1"
+            }
         }
     }
 }

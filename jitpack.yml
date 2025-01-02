@@ -1,0 +1,4 @@
+jdk:
+  - openjdk23
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
